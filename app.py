@@ -6,10 +6,20 @@ from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
 import joblib
 import pickle
-
+import requests
 
 # model = tf.keras.models.load_model("models/Skin.h5", compile=False)
 # model.compile(Adamax(learning_rate= 0.001), loss= 'categorical_crossentropy', metrics= ['accuracy'])
+
+
+
+
+url = "https://github.com/eldon6219/TumorSwift-lung-cancer/blob/main/Skin.pkl?raw=true"
+response = requests.get(url, stream=True)
+
+with open("Skin.pkl", "wb") as f:
+    for chunk in response.iter_content(1024):
+        f.write(chunk)
 
 model = joblib.load("Skin.pkl")
 
