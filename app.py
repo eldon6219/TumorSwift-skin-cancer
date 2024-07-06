@@ -14,7 +14,7 @@ import requests
 
 
 
-url = "https://github.com/eldon6219/TumorSwift-lung-cancer/blob/main/Skin.pkl?raw=true"
+url = "https://github.com/eldon6219/TumorSwift-skin-cancer/blob/main/Skin.pkl?raw=true"
 response = requests.get(url, stream=True)
 
 with open("Skin.pkl", "wb") as f:
