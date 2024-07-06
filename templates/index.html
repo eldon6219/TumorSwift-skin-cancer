@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css reset  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- stylesheet -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Secular+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Secular+One&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inder&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inder&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inder&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inder&family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Secular+One&display=swap"
+        rel="stylesheet">
+
+        <style>
+            * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+:root {
+    --main-color: #705AEB;
+    --link-color: #ffffff;
+    --head-color: #e3e3e3;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100dvh;
+    position: relative;
+}
+
+
+
+/* start header */
+header {
+    background: linear-gradient(90deg, rgba(112, 90, 235, 0.45) -0.53%, rgba(89, 72, 187, 0.66) -0.52%, rgba(87, 70, 182, 0.69) 4.99%, rgba(81, 65, 169, 0.74) 21.05%, rgba(18, 8, 72, 0.81) 37.11%, rgba(63, 51, 133, 0.90) 54.17%, rgba(66, 53, 139, 0.87) 60.7%, rgba(74, 59, 154, 0.81) 78.77%, rgba(67, 54, 140, 0.87) 90.3%, rgba(68, 55, 143, 0.86) 90.31%);
+    height: 121px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    padding: 0 15px;
+}
+
+
+.container .icon {
+    width: 287px;
+    height: 201px;
+}
+
+.container .icon img {
+    width: 100%
+}
+
+.container .links {
+    position: relative;
+    bottom: 2rem;
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 70.187%;
+}
+
+.container .links a {
+    color: var(--link-color);
+    font-size: 2rem;
+    margin-left: 3rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s;
+    color: var(--link-color);
+}
+
+.container .links a:hover {
+    color: var(--main-color);
+}
+
+.container .links a.lighted {
+    color: var(--main-color);
+}
+
+
+.container .log-but {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    bottom: 2rem;
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.container .log-but a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 11px 26.25px 11px 27.75px;
+    background-color: var(--main-color);
+    color: var(--link-color);
+    width: 117px;
+    height: 42px;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.container .log-but a:hover {
+    background-color: #fff;
+    color: #705AEB;
+}
+
+/* end header */
+/* start main  */
+main {
+    min-height: 80dvh;
+}
+
+main .container {
+    display: flex;
+    margin-top: -16px;
+    justify-content: space-between;
+}
+
+main .container .left-side {
+    flex-basis: 35%;
+    overflow-x: hidden;
+    height: 90dvh;
+    padding: 1rem;
+    line-height: 1.5px;
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 10px;
+    opacity: .5;
+}
+
+
+
+main .container .left-side h1 {
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    color: #705AEB;
+}
+main .container .left-side section.header { 
+    margin-bottom: .5rem;
+}
+main .container .left-side .content { 
+    margin-bottom: 1rem;
+}
+
+
+main .container .left-side p {
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.2rem;
+    text-transform: capitalize;
+}
+
+main .container .right-side {
+    flex-basis: 64%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url("../static/premium_photo-1661690000205-dc0528379894.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main .container .right-side::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* z-index: -1; */
+}
+
+main .container .right-side input {
+    display: none;
+}
+main .container .right-side form { 
+    z-index: 1;
+}
+
+main .container .right-side label {
+    display: flex;
+    width: 350px;
+    height: 94px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #705AEB;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    transition: .3s;
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+main .container .right-side label:hover { 
+    background-color: #705AEB;
+    color: #fff;
+}
+main .container .right-side .btn { 
+    display: flex;
+    width: 350px;
+    height: 94px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #705AEB;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    transition: .3s;
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border: 0;
+}
+main .container .right-side .btn:hover { 
+    background-color: #705AEB;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* end main  */
+        </style>
+</head>
+
+<body>
+    <!-- start header -->
+    <header>
+        <div class="container">
+            <div class="icon">
+                <!-- <img src="img/photo_2024-03-02_13-40-49-removebg-preview (1) 1.png" alt=""> -->
+                <img src="{{url_for('static', filename='photo_2024-03-02_13-40-49-removebg-preview (1) 1.png')}}" alt="">
+            </div>
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#" class="lighted">services </a>
+                <a href="#">profile</a>
+                <a href="#">search</a>
+            </div>
+            <div class="log-but">
+                <a href="#">Log in</a>
+                <a href='#'>sign up</a>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- start main -->
+    <main>
+        <div class="container">
+            <div class="left-side">
+                <h1>welcome to skin cancer prediction service</h1>
+                <section class="header">
+                    <p>Skin Cancer:</p>
+                </section>
+                <section class="content">
+                    <p>Skin cancer is a common type of cancer that develops when skin cells undergo abnormal growth.
+                        Early
+                        detection is key to successful treatment.</p>
+                </section>
+                <section class="header">
+                    <p>These are some tips for preventing Skin Cancer:</p>
+                </section>
+                <section class="content">
+                    <p> 1- Limit Sun Exposure: Wear protective clothing and use sunscreen <br>
+                        2- Self-Examine Your Skin: Regularly check your skin for any changes. <br>
+                        3- Avoid Harmful Sun Exposure: Steer clear of the sun during peak hours (10 AM to 4 PM). <br>
+                        4- Wear Sunglasses: Protect your eyes from UV rays. <br>
+                    </p>
+                </section>
+                <section class="header">
+                    <p>How to Benefit from our prediction service :</p>
+                </section>
+                <section class="content">
+                    <p>1- Request Analysis: Ask your doctor for a
+                        pathology
+                        analysis of your skin tumor. <br> 
+                        2- Upload Results: Once you receive the analysis results, upload the images through our platform
+                        for
+                        an accurate report and predictive examination.</p>
+                </section>
+                <section class="content">
+                    <p>  Through TumorSwift , we are here to provide accurate predictions and guidance on cancer and
+                        maintaining the health of your skin. Take the necessary steps to preserve your health and prevent
+                        skin cancer.</p>
+                </section>
+            </div>
+            <div class="right-side">
+                <form action='{{url_for("predict")}}' method="post" enctype="multipart/form-data">
+                    <label for="file">upload file</label>
+                    <input type="file" class="form-control" name="imagefile" id="file">
+                    <button type="submit" class="btn">predict</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- end main -->
+
+</body>
